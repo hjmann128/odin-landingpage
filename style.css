@@ -20,6 +20,13 @@ a {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
+    transition: ease;
+}
+
+a:hover { 
+    background-color: #3882f6;
+    padding: 5px;
+    border-radius: 10%;
 }
 
 header h1 {
@@ -51,8 +58,13 @@ header h1 {
 }
 
 .hero__text button {
+    font-size: 20px;
     align-self: flex-end;
     align-self: center;
+    background-color: #3882f6;
+    border-radius: 25%;
+    padding: 8px 30px;
+    color: white; 
 }
 
 .hero__main { 
@@ -68,19 +80,60 @@ img {
 
 .content {
     display: flex;
-    flex-direction: row;
-     justify-content: center;
-     align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 
+.content__text {
+    margin-top: 40px ;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 700;
+}
 
 
-.box {
+.box1{
+    background-image: url("/skyline.jpeg");
     border: black solid;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 10%;
+}
+.box2{
+    background-image: url("/rundlehorn.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: black solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+}
+.box3{
+    background-image: url("/northover.jpeg");
+    background-size: cover;
+    border: black solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+}
+
+.box4{
+    background-image: url("/lake.jpeg");
+    background-size: cover;
+    border: black solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+}
+
+.card__box {
+    display: flex;
+    gap: 80px;
+    margin: 40px 0;
+    justify-content: center;
 }
 
 .card {
@@ -112,9 +165,51 @@ img {
 .subquote {
     margin-top: 50px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: normal;   
+}
+
+.action {
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+    
     
     
 }
 
+.action__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: #3882f6;
+    padding: 30px;
+    gap: 200px;
+    color: white;
+  
 
+}
+
+.action__main {
+    justify-content: start;
+}
+
+.action__text h3 {
+    order: -1;
+    align-self: flex-end;
+
+}
+
+.action__button {
+    font-size: 20px;
+    align-self: flex-end;
+    align-self: center;
+    background-color: #3882f6;
+    border-radius: 10%;
+    padding: 5px 40px;
+    color: white;
+    border: solid; 
+
+
+}
